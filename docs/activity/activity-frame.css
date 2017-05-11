@@ -1,0 +1,108 @@
+h1, h2, h3, h4, h5, h6, p{
+	font-family: 微軟正黑體, 標楷體;
+	font-weight: bold;
+}
+/*a{
+	text-decoration: none;
+}*/
+.content-wrapper{
+	width: 75%;
+	margin: 0 auto;
+}
+.content-wrapper > h1{
+	color: #3b1449;
+	margin: 40px 0;
+}
+.content-wrapper p{
+	text-align: justify;
+	text-justify:inter-ideograph;
+}
+.wash-dog, .speech{
+	margin: 2% auto;
+	border-radius: 25px;
+	padding: 2%;
+	width: 95%;
+	background: #c8b5cb;
+}
+.wash-dog > h2, .speech > h2{
+	margin: 10px 0;
+	font-size: 25px;
+}
+.infor-container{
+	margin-top: 30px;
+	overflow: auto;
+	width: 100%;
+}
+#cover-1{
+	width: 60%;
+}
+#cover-2{
+	width: 30%;
+}
+.cover{float: left;}
+.cover img{width: 100%;}
+#descript-1{width: 40%;}
+#descript-2{width: 70%;}
+.descript{
+	float: left;
+	padding-left: 2%;
+}
+.descript p{
+	font-size: 20px;
+	line-height: 150%;
+}
+.gallery{
+	position: relative;
+	width: 100%;
+	overflow: auto;
+	text-align: center;
+}
+.gallery-item-right{
+	float: left;
+	width: 12.66666%;
+	margin: 2% 2%;
+	cursor: pointer;
+}
+.gallery-item-bottom{
+	vertical-align: top;
+	display: inline-block;
+	width: 10.66666%;
+	margin: 5% 3% 2% 3%;
+	cursor: pointer;
+}
+
+.gallery-item-right > img, .gallery-item-bottom > img{
+	width: 100%;
+}
+@media (max-width: 1024px){
+	.descript p{
+		line-height: initial;
+	}
+	.cover{
+		margin: 0 auto;
+	}
+	.cover, .descript{
+		float: none;
+		padding: 0;
+	}
+	#cover-1, #cover-2{
+		width: 80%;
+		text-align: center;
+	}
+
+	#descript-1, #descript-2{
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 768px){
+	.content-wrapper > h1{
+		font-size: 30px;
+		text-align: center;
+	}
+}
+@media (max-width: 480px){
+	.content-wrapper{
+		width: 90%;
+	}
+}
